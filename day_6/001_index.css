@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    margin: 50px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: row; 
+    overflow: hidden;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-image {
+    width: 30%;
+    min-width: 250px;
+}
+
+.profile-info {
+    padding: 20px;
+    width: 70%;
+}
+
+.profile-info h2 {
+    margin: 0;
+}
+
+.subtitle {
+    color: #555;
+    font-style: italic;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.info p {
+    margin: 5px 0;
+}
+
+.description {
+    color: #333;
+    line-height: 1.6;
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Boxes Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f6f6f6;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 50px;
+            margin-top: 30px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+            border: 2px solid #333;
+            background-color: white;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .box {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .box img {
+            width: 32px;
+            height: 32px;
+        }
+
+        .box h2 {
+            margin: 0;
+            font-size: 20px;
+        }
+
+        .box p {
+            margin: 5px 0 0;
+            font-size: 16px;
+            color: #555;
+        }
+
+        @media (max-width: 900px) {
+            .grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS</h1>
+
+    <div class="container">
+        <div class="grid">
+            <div class="box">
+                <img src="https://cdn-icons-png.flaticon.com/512/1828/1828817.png" alt="Icon 1">
+                <div>
+                    <h2>Lorem Ipsum</h2>
+                    <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://cdn-icons-png.flaticon.com/512/1828/1828818.png" alt="Icon 2">
+                <div>
+                    <h2>Dolor Sitema</h2>
+                    <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://cdn-icons-png.flaticon.com/512/1828/1828819.png" alt="Icon 3">
+                <div>
+                    <h2>Sed ut perspiciatis</h2>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://cdn-icons-png.flaticon.com/512/1828/1828820.png" alt="Icon 4">
+                <div>
+                    <h2>Magni Dolores</h2>
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://cdn-icons-png.flaticon.com/512/1828/1828821.png" alt="Icon 5">
+                <div>
+                    <h2>Nemo Enim</h2>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://cdn-icons-png.flaticon.com/512/1828/1828822.png" alt="Icon 6">
+                <div>
+                    <h2>Elusmod Tempor</h2>
+                    <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Skills</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            border: 2px;
+            font-family: Arial, sans-serif;
+            background-color: #f4f9fb;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            border: 2px solid #0a080e;
+            background-color: #e1dee9;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #040404;
+            margin-bottom: 30px;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 20px;
+        }
+
+        .skill span {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .progress {
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            position: relative;
+            height: 15px;
+        }
+
+        .progress-bar {
+            background-color: #1ca8dd;
+            height: 100%;
+            border-radius: 5px;
+            text-align: right;
+            padding-right: 5px;
+            color: #000;
+            font-weight: bold;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Skills</h1>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+
+        <div class="skills">
+            <div class="skill">
+                <span>HTML</span>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 100%;">100%</div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <span>CSS</span>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 90%;">90%</div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <span>JAVASCRIPT</span>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 75%;">75%</div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <span>PHP</span>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 80%;">80%</div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <span>WORDPRESS/CMS</span>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 90%;">90%</div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <span>PHOTOSHOP</span>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 55%;">55%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
